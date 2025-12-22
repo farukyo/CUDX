@@ -167,9 +167,7 @@ def cudx():
                 cud_index += 1 # Pattern continues across spaces
             elif sayi == "-": # Period
                 metin_sifre2.append("-")
-                # --- Keeping original logic as requested (Potential Error 3 NOT fixed) ---
-                cud_index = 1 # Pattern index set to 1 after period in paragraph mode
-                # --- End of potentially incorrect logic ---
+                cud_index = 0  # 1 yerine 0 olmalı
             elif sayi == "/": # Slash
                 metin_sifre2.append("/")
                 cud_index = 0 # Reset pattern index for new paragraph
